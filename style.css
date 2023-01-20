@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0d0f12;
+    color: #e8e9e9;
+    line-height: 50px;
+    font-family: PS TT Commons Roman,Gotham SSm A,Gotham SSm B,Arial,sans-serif;
+}
+
+.container{
+    display: flex;   
+}
+
+.sign_in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50vw;
+}
+
+img{
+    width: 320px;
+}
+
+label{
+    display: block;
+    font-weight: 600;
+}
+
+input{
+    background: transparent;
+    border: 1px solid #3b3c3f;
+    padding: 10px 5px 10px 5px;
+    width: 98%;
+    color: #fff;
+}
+input[type="button"]{
+    padding: 10px;
+    width: 100%;
+    background-color:#0074ab;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button{
+    background-color:#2d3137;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+}
+
+hr{
+    flex: auto;
+    border: none;
+    height: 1px;
+    background-color: hsla(0,0%,100%,.15);
+}
+form p{
+    text-align: center;
+    color: #25a0d6;
+}
+form p:hover{
+    text-decoration: underline;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.footer p{
+    text-align: center;
+    color: #b7b7b8;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.showcase{
+    background-image: url('./image.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .showcase {
+      display: none;
+    }
+    .container{
+        display: block;   
+    }
+    .sign_in{
+        width: 100vw;
+        padding: 20px;
+    }
+    input{
+        width: 80%;
+    }
+    input[type="button"]{
+        width: 83%;
+    }
+    
+    button{
+        width: 83%;
+    }
+    form p{
+        width: 83%;
+    }
+    .footer p{
+        width: 83%;
+    }
+  }
